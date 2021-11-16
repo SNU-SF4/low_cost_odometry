@@ -1,0 +1,5 @@
+# VS Code config file
+.vscode/
+
+# Python compiled bytecode
+*.pyc 
