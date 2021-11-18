@@ -2,4 +2,7 @@
 .vscode/
 
 # Python compiled bytecode
-*.pyc 
+*.pyc
+
+# rosbag file
+bag/

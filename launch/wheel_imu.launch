@@ -1,0 +1,19 @@
+<launch>
+    <arg name="path" default="$(find low_cost_odometry)/bag/" />
+    <arg name="file" default="2021-11-13-19-49-51.bag" />
+    <arg name="option" default="" />
+    <node pkg="rosbag" type="play" name="player" output="screen" args="--clock $(arg path)$(arg file) $(arg option)"/>
+
+
+    <!-- Publish static transform of the laser. Define your sensor offset here -->
+    <node pkg="tf2_ros" type="static_transform_publisher" name="base_to_imu" args="0 0 0 0 0 0  /base_footprint /imu_link"/>
+    <node pkg="tf2_ros" type="static_transform_publisher" name="base_to_cam" args="0 0 0.3 0 0 0  /base_footprint /camera_link"/>
+
+    <!-- IMU Only Extended Kalman Filter-->
+    <node pkg="robot_localization" type="ekf_localization_node" name="ekf_localization">
+        <!-- <remap from="odometry/filtered" to="odom" /> -->
+        <rosparam command="load" file="$(find low_cost_odometry)/config/wheel_imu.yaml" />
+    </node>
+
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find low_cost_odometry)/rviz/kf.rviz" />
+</launch>

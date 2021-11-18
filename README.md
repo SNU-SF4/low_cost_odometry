@@ -16,6 +16,17 @@
 
 ## How to run
 
+- Download .bag file & copy to workspace
+
 ```bash
 roscore
+roscd low_cost_odometry/bag
+# copy the bag file in the directory
+rosbag play 2021-11-13-19-49-51.bag --clock # for test
+```
+
+- View odometry visualization of sensor fusion method
+
+```bash
+roslaunch low_cost_odometry [sensor_fusion_method].launch
 ```
