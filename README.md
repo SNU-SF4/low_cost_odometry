@@ -6,7 +6,7 @@
 
 | File Name | Description |
 |:---------:|:-----------:|
-| [2021-11-13-19-45-51.bag](https://drive.google.com/file/d/1A_lgDory2tU7COJQypWiKVzKj4QV_qGF/view)| for sensor data acquisition test |
+| [2021-11-22-13-10-34.bag](https://drive.google.com/file/d/1A_lgDory2tU7COJQypWiKVzKj4QV_qGF/view)| for sensor data acquisition test |
 | [2021-11-xx-xx-xx-xx.bag](https://TBD) | Scenario #1 |
 | [2021-11-xx-xx-xx-xx.bag](https://TBD) | Scenario #2 |
 
@@ -22,7 +22,7 @@
 roscore
 roscd low_cost_odometry/bag
 # copy the bag file in the directory
-rosbag play 2021-11-13-19-49-51.bag --clock # for test
+rosbag play 2021-11-22-13-10-34.bag --clock # for test
 ```
 
 - View odometry visualization of sensor fusion method
