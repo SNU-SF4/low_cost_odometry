@@ -1,9 +1,9 @@
 <launch>
+    <param name="/use_sim_time" value="true" />
     <arg name="path" default="$(find low_cost_odometry)/bag/" />
-    <arg name="file" default="2021-11-13-19-49-51.bag" />
+    <arg name="file" default="s1.bag" />
     <arg name="option" default="" />
     <node pkg="rosbag" type="play" name="player" output="screen" args="--clock $(arg path)$(arg file) $(arg option)"/>
-
 
     <!-- Publish static transform of the laser. Define your sensor offset here -->
     <node pkg="tf2_ros" type="static_transform_publisher" name="base_to_imu" args="0 0 0 0 0 0  /base_footprint /imu_link"/>
