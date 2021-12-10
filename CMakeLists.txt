@@ -11,6 +11,10 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   std_msgs
   tf2_ros
+  robot_localization
+  hector_slam
+  gmapping
+  rtabmap_ros
 )
 
 ################################################################################

@@ -1,0 +1,25 @@
+<launch>
+    <!-- Wheel Only -->
+    <arg name="wheel_only_type" value="Odometry" />
+    <arg name="wheel_only_traj" value="/odom" />
+
+    <!-- Wheel + IMU -->
+    <arg name="wheel_imu_type" value="Odometry" />
+    <arg name="wheel_imu_traj" value="/odometry/filtered" />
+
+    <!-- LiDAR Only -->
+    <arg name="lidar_only_type" value="PoseStamped" />
+    <arg name="lidar_only_traj" value="/slam_out_pose" />
+
+    <!-- ETC -->
+    <arg name="transform_type" value="Transform" />
+    <arg name="transform_traj" value=""
+        doc="wheel_imu_lidar / rgbd / wheel_imu_rgbd / lidar_rgbd / wheel_imu_lidar_rgbd"/>
+
+    <node pkg="low_cost_odometry" name="rosmsg_to_tum" type="rosmsg_to_tum.py" output="screen">
+        <param name="msg_type" value="$(arg wheel_only_type)" />
+        <param name="extracted_topic" value="$(arg wheel_only_traj)" />
+        <param name="scene_number" value="s1" />
+        <param name="tum_file_name" value="wheel_only.txt" />
+    </node>
+</launch>

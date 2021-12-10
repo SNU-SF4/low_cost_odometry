@@ -14,6 +14,10 @@
 	<depend>rospy</depend>
 	<depend>std_msgs</depend>
 	<depend>tf2_ros</depend>
+	<depend>robot_localization</depend>
+	<depend>hector_slam</depend>
+	<depend>gmapping</depend>
+	<depend>rtabmap_ros</depend>
 
 	<export>
 	</export>
