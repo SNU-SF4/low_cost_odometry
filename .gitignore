@@ -6,3 +6,6 @@
 
 # rosbag file
 bag/
+
+# output files
+output/
