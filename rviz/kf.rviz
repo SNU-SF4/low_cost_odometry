@@ -4,8 +4,8 @@ Panels:
     Name: Displays
     Property Tree Widget:
       Expanded:
-        - /Global Options1
         - /Status1
+        - /Wheel Only1/Shape1
         - /Wheel+IMU1/Shape1
       Splitter Ratio: 0.5
     Tree Height: 365
@@ -81,9 +81,9 @@ Visualization Manager:
         Axes Radius: 0.10000000149011612
         Color: 255; 25; 0
         Head Length: 0.009999999776482582
-        Head Radius: 0.009999999776482582
-        Shaft Length: 0.10000000149011612
-        Shaft Radius: 0.019999999552965164
+        Head Radius: 0.0010000000474974513
+        Shaft Length: 0.009999999776482582
+        Shaft Radius: 0.009999999776482582
         Value: Arrow
       Topic: /odom
       Unreliable: false
@@ -115,10 +115,10 @@ Visualization Manager:
         Axes Length: 1
         Axes Radius: 0.10000000149011612
         Color: 0; 170; 0
-        Head Length: 0.009999999776482582
+        Head Length: 0.0010000000474974513
         Head Radius: 0.009999999776482582
-        Shaft Length: 0.10000000149011612
-        Shaft Radius: 0.019999999552965164
+        Shaft Length: 0.009999999776482582
+        Shaft Radius: 0.009999999776482582
         Value: Arrow
       Topic: /odometry/filtered
       Unreliable: false
@@ -213,7 +213,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 6.1179399490356445
+      Distance: 6.944422721862793
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -221,17 +221,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 0.4632461369037628
-        Y: -1.4935879707336426
-        Z: 0.1402662694454193
+        X: 1.0565439462661743
+        Y: -1.3724833726882935
+        Z: 0.41374698281288147
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.270397663116455
+      Pitch: 1.4547964334487915
       Target Frame: <Fixed Frame>
-      Yaw: 3.1485767364501953
+      Yaw: 3.1235759258270264
     Saved: ~
 Window Geometry:
   Displays:
@@ -252,4 +252,4 @@ Window Geometry:
     collapsed: false
   Width: 1918
   X: 0
-  Y: 30
+  Y: 0
