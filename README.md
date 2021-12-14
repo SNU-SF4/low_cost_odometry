@@ -1,5 +1,15 @@
 # Comparison of Low-Cost Odometry for Mobile Robot in Various Indoor Environments
 
+---
+
+## Overview
+
+- Paper
+
+- [Presentation Video](https://youtu.be/iK0QkvQVDcc)
+
+- [Presentation Slide](https://github.com/SNU-SF4/low_cost_odometry/blob/master/docs/Final%20Presentation.pdf)
+
 ## Our Dataset
 
 - .rosbag file download link
