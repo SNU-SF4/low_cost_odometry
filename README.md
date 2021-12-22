@@ -4,11 +4,11 @@
 
 ## Overview
 
-- Paper
+- [Paper](https://github.com/SNU-SF4/low_cost_odometry/blob/master/docs/final_report.pdf)
 
 - [Presentation Video](https://youtu.be/iK0QkvQVDcc)
 
-- [Presentation Slide](https://github.com/SNU-SF4/low_cost_odometry/blob/master/docs/Final%20Presentation.pdf)
+- [Presentation Slide](https://github.com/SNU-SF4/low_cost_odometry/blob/master/docs/final_presentation.pdf)
 
 ## Our Dataset
 
