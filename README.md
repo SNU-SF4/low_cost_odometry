@@ -51,7 +51,7 @@
 roslaunch low_cost_odometry [sensor_fusion_method].launch
 ```
 
-## How to extract jrajectory data
+## How to extract trajectory data
 
 - Edit [launch file](https://github.com/SNU-SF4/low_cost_odometry/blob/master/launch/rosmsg_to_tum.launch)
 
